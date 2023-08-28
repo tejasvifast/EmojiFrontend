@@ -16,7 +16,6 @@ const emojis = [
   { name: "Zany Face", emoji: "🤪", unicode: "\u{1F92A}", utf8: "&#x1F92A;", html: "&#129322;", url: "%F0%9F%A4%AA" },
   { name: "Face with Raised Eyebrow", emoji: "🤨", unicode: "\u{1F928}", utf8: "&#x1F928;", html: "&#129320;", url: "%F0%9F%A4%A8" },
   { name: "Face with Monocle", emoji: "🧐", unicode: "\u{1F9D0}", utf8: "&#x1F9D0;", html: "&#129488;", url: "%F0%9F%A7%90" },
-  { name: "Nerd Face", emoji: "🤓", unicode: "\u{1F913}", utf8: "&#x1F913;", html: "&#129299;", url: "%F0%9F%A4%93" },
   { name: "Sunglasses", emoji: "😎", unicode: "\u{1F60E}", utf8: "&#x1F60E;", html: "&#128526;", url: "%F0%9F%98%8E" },
   { name: "Star-Struck", emoji: "🤩", unicode: "\u{1F929}", utf8: "&#x1F929;", html: "&#129321;", url: "%F0%9F%A4%A9" },
   { name: "Grinning Face with Big Eyes", emoji: "😃", unicode: "\u{1F603}", utf8: "&#x1F603;", html: "&#128515;", url: "%F0%9F%98%83" },
@@ -24,22 +23,15 @@ const emojis = [
   { name: "Beaming Face with Smiling Eyes", emoji: "😁", unicode: "\u{1F601}", utf8: "&#x1F601;", html: "&#128513;", url: "%F0%9F%98%81" },
   { name: "Grinning Squinting Face", emoji: "😆", unicode: "\u{1F606}", utf8: "&#x1F606;", html: "&#128518;", url: "%F0%9F%98%86" },
   { name: "Grinning Face with Sweat", emoji: "😅", unicode: "\u{1F605}", utf8: "&#x1F605;", html: "&#128517;", url: "%F0%9F%98%85" },
-  { name: "Rolling on the Floor Laughing", emoji: "🤣", unicode: "\u{1F923}", utf8: "&#x1F923;", html: "&#129315;", url: "%F0%9F%A4%A3" },
-  { name: "Face with Tears of Joy", emoji: "😂", unicode: "\u{1F602}", utf8: "&#x1F602;", html: "&#128514;", url: "%F0%9F%98%82" },
   { name: "Slightly Smiling Face", emoji: "🙂", unicode: "\u{1F642}", utf8: "&#x1F642;", html: "&#128578;", url: "%F0%9F%99%82" },
   { name: "Smiling Face with Halo", emoji: "😇", unicode: "\u{1F607}", utf8: "&#x1F607;", html: "&#128519;", url: "%F0%9F%98%87" },
   { name: "Winking Face", emoji: "😉", unicode: "\u{1F609}", utf8: "&#x1F609;", html: "&#128521;", url: "%F0%9F%98%89" },
   { name: "Smiling Face with Smiling Eyes", emoji: "😊", unicode: "\u{1F60A}", utf8: "&#x1F60A;", html: "&#128522;", url: "%F0%9F%98%8A" },
-  { name: "Star-Struck", emoji: "🤩", unicode: "\u{1F929}", utf8: "&#x1F929;", html: "&#129321;", url: "%F0%9F%A4%A9" },
   { name: "Face Blowing a Kiss", emoji: "😘", unicode: "\u{1F618}", utf8: "&#x1F618;", html: "&#128536;", url: "%F0%9F%98%98" },
   { name: "Kissing Face", emoji: "😗", unicode: "\u{1F617}", utf8: "&#x1F617;", html: "&#128535;", url: "%F0%9F%98%97" },
   { name: "Kissing Face with Closed Eyes", emoji: "😚", unicode: "\u{1F61A}", utf8: "&#x1F61A;", html: "&#128538;", url: "%F0%9F%98%9A" },
   { name: "Smiling Face with Hearts", emoji: "🥰", unicode: "\u{1F970}", utf8: "&#x1F970;", html: "&#129392;", url: "%F0%9F%A5%B0" },
   { name: "Smiling Face with Heart-Eyes", emoji: "😍", unicode: "\u{1F60D}", utf8: "&#x1F60D;", html: "&#128525;", url: "%F0%9F%98%8D" },
-  { name: "Star-Struck", emoji: "🤩", unicode: "\u{1F929}", utf8: "&#x1F929;", html: "&#129321;", url: "%F0%9F%A4%A9" },
-  { name: "Face with Tongue", emoji: "😛", unicode: "\u{1F61B}", utf8: "&#x1F61B;", html: "&#128539;", url: "%F0%9F%98%9B" },
-  { name: "Winking Face with Tongue", emoji: "😜", unicode: "\u{1F61C}", utf8: "&#x1F61C;", html: "&#128540;", url: "%F0%9F%98%9C" },
-  { name: "Zany Face", emoji: "🤪", unicode: "\u{1F92A}", utf8: "&#x1F92A;", html: "&#129322;", url: "%F0%9F%A4%AA" },
   { name: "Face with Symbols on Mouth", emoji: "🤬", unicode: "\u{1F92C}", utf8: "&#x1F92C;", html: "&#129324;", url: "%F0%9F%A4%AC" },
   { name: "Face with Medical Mask", emoji: "😷", unicode: "\u{1F637}", utf8: "&#x1F637;", html: "&#128567;", url: "%F0%9F%98%B7" },
   { name: "Face with Thermometer", emoji: "🤒", unicode: "\u{1F912}", utf8: "&#x1F912;", html: "&#129298;", url: "%F0%9F%A4%92" },
@@ -80,13 +72,6 @@ const emojis = [
   { name: "Cowboy Hat Face", emoji: "🤠", unicode: "\u{1F920}", utf8: "&#x1F920;", html: "&#129312;", url: "%F0%9F%A4%A0" },
   { name: "Party Face", emoji: "🥳", unicode: "\u{1F973}", utf8: "&#x1F973;", html: "&#129363;", url: "%F0%9F%A5%B3" },
   { name: "Smiling Face with Hearts", emoji: "🥰", unicode: "\u{1F970}", utf8: "&#x1F970;", html: "&#129392;", url: "%F0%9F%A5%B0" },
-  { name: "Smiling Face with Smiling Eyes", emoji: "😊", unicode: "\u{1F60A}", utf8: "&#x1F60A;", html: "&#128522;", url: "%F0%9F%98%8A" },
-  { name: "Star-Struck", emoji: "🤩", unicode: "\u{1F929}", utf8: "&#x1F929;", html: "&#129321;", url: "%F0%9F%A4%A9" },
-  { name: "Face with Tongue", emoji: "😛", unicode: "\u{1F61B}", utf8: "&#x1F61B;", html: "&#128539;", url: "%F0%9F%98%9B" },
-  { name: "Winking Face with Tongue", emoji: "😜", unicode: "\u{1F61C}", utf8: "&#x1F61C;", html: "&#128540;", url: "%F0%9F%98%9C" },
-  { name: "Zany Face", emoji: "🤪", unicode: "\u{1F92A}", utf8: "&#x1F92A;", html: "&#129322;", url: "%F0%9F%A4%AA" },
-  { name: "Face with Raised Eyebrow", emoji: "🤨", unicode: "\u{1F928}", utf8: "&#x1F928;", html: "&#129320;", url: "%F0%9F%A4%A8" },
-  { name: "Face with Monocle", emoji: "🧐", unicode: "\u{1F9D0}", utf8: "&#x1F9D0;", html: "&#129488;", url: "%F0%9F%A7%90" },
   { name: "Nerd Face", emoji: "🤓", unicode: "\u{1F913}", utf8: "&#x1F913;", html: "&#129299;", url: "%F0%9F%A4%93" },
   { name: "Smiling Face with Halo", emoji: "😇", unicode: "\u{1F607}", utf8: "&#x1F607;", html: "&#128519;", url: "%F0%9F%98%87" },
   { name: "Cow Face", emoji: "🐮", unicode: "\u{1F42E}", utf8: "&#x1F42E;", html: "&#128046;", url: "%F0%9F%90%AE" },
@@ -150,30 +135,49 @@ const emojis = [
   { name: "Wrestling", emoji: "🤼", unicode: "\u{1F93C}", utf8: "&#x1F93C;", html: "&#129340;", url: "%F0%9F%A4%BC" },
   { name: "Water Polo", emoji: "🤽", unicode: "\u{1F93D}", utf8: "&#x1F93D;", html: "&#129341;", url: "%F0%9F%A4%BD" },
   { name: "Handball", emoji: "🤾", unicode: "\u{1F93E}", utf8: "&#x1F93E;", html: "&#129342;", url: "%F0%9F%A4%BE" },
-
 ];
 
-const Smilyface =()=>{
-  const [emoji ,setEmoji] =useState('')   //backgroundColor:'#194D33'
-      
-    return <div style={{borderRadius:'20px',margin:'10px'}}>
-        {emoji && <div style={{borderRadius:'20px',margin:'10px',backgroundColor:'pink',padding:'20px'}}>
-          <h4>Emoji Details</h4>
-          <div style={{display:'flex',flexDirection:'column'}}>
-            <span style={{fontWeight:'100px'}}> Name : {emoji.name}</span>
-            <span> Unicode : {emoji.unicode}</span>
-            <span> UTF8 : {emoji.utf8}</span>
-            <span> Html Code : {emoji.html}</span>
-            <span> Url Code : {emoji.url}</span>
-          </div>
-        </div>
-        }
-        <div style={{display:'flex',flexWrap:'wrap'}}>
-       {map(emojis,(el)=>{
-        return <div style={{width:'40px',height:'40px'}} onClick={()=>{setEmoji(el)}}><span style={{fontSize:'25px'}}>{el.unicode}</span></div>
-       })}
-       </div>
+const Smilyface = () => {
+  const [emoji, setEmoji] = useState(
+    {
+      name: "Grinning Face",
+      emoji: "😀",
+      unicode: "\u{1F600}",
+      utf8: "&#x1F600;",
+      html: "&#128512;",
+      url: "%F0%9F%98%80"
+    }
+  )   //backgroundColor:'#194D33'
+  const [rotate, setRotate] = useState('')
+
+  return <div style={{ borderRadius: '20px', margin: '10px' }}>
+    {emoji && <div style={{ borderRadius: '20px', margin: '10px', backgroundColor: 'pink', padding: '20px' }}>
+      <h4>Emoji Details</h4>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <span style={{ fontWeight: '100px' }}> Name : {emoji.name}</span>
+        <span> Unicode : {emoji.unicode}</span>
+        <span> UTF8 : {emoji.utf8}</span>
+        <span> Html Code : {emoji.html}</span>
+        <span> Url Code : {emoji.url}</span>
+      </div>
     </div>
+    }
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      {map(emojis, (el) => {
+        return <div
+          className={rotate===el.html ? 'headingEmoji' : ''}
+          style={{ width: '40px', height: '40px' }}
+          onClick={() => {
+            setEmoji(el)
+            setRotate(el.html)
+          }}
+        >
+          <span style={rotate===el.html ? { fontSize: '35px' }:{ fontSize: '25px' }} >{el.unicode}
+          </span>
+        </div>
+      })}
+    </div>
+  </div>
 }
 
 export default Smilyface;
