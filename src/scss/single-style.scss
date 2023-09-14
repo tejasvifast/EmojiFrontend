@@ -1,0 +1,43 @@
+.single-container{
+    max-width: 1400px;
+	margin: 0 auto;
+	.emoji-wrap {
+		a {
+			margin: 0 8px 8px 0;
+		}
+	}
+	.emoji-title {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.page-title {
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+	}
+	.custom-emoji {
+		margin-bottom: 3rem;
+		font-size: 1.5rem;
+		max-width: 780px;
+		color: var(--c-text-light);
+	}
+	.emoji {
+		&.no-image {
+			svg {
+				color: var(--c-text-main);
+				width: 120%;
+				height: 120%;
+				margin-left: -10%;
+				opacity: 0.5;
+			}
+		}
+	}
+	.emoji-image-wrap {
+		margin: 4rem 0 0;
+		border-radius: var(--size-4);
+		overflow: hidden;
+		.featured-image {
+			width: 100%;
+			height: auto;
+        }
+    }
+}
