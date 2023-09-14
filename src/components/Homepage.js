@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 import { useState } from "react";
 
 const buttonConfig = [
-    { value: 'FaceEmojis', label: 'Face' },
+    { value: 'faceEmojis', label: 'Face' },
     { value: 'flowersEmojis', label: 'Flower' },
     { value: 'handSignEmojis', label: 'Hand Sign' },
     { value: 'fruitsEmojis', label: 'Fruit' },

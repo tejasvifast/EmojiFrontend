@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { faceEmojis, flowersEmojis, handSignEmojis, fruitsEmojis, foodEmojis } from "../utils/emojiBundle";
 
 //console.log(moreFlowers);
-const emojisbundle = { faceEmojis, flowersEmojis, handSignEmojis, fruitsEmojis, foodEmojis }
+const emojisbundle = { faceEmojis , flowersEmojis, handSignEmojis, fruitsEmojis, foodEmojis }
 
 const EmojiContainer = (props) => {
   const { selectedEmojiBundle } = props
