@@ -17,7 +17,15 @@ const HomePage = () => {
     return (
         <div style={{ boxShadow: '2px 2px 4px black', height: '100%', margin: '10px', borderRadius: '20px', padding: '10px' }}>
             <Appbar />
-            <div style={{ display: 'flex', flexWrap: 'wrap', border: '5px solid lightGreen', borderRadius: '10px', marginTop: '15px', marginBottom: '5px' }}>
+            {/* <div class="box"></div>
+
+            <div class="container">
+                <div class="ring red-ring"></div>
+                <div class="ring green-ring"></div>
+                <div class="main"></div>
+            </div> */}
+
+            <div style={{ display: 'flex', flexWrap: 'wrap', border: '1px solid lightGreen', borderRadius: '10px', marginTop: '15px', marginBottom: '5px' }}>
                 {
                     map(buttonConfig, (el) => {
                         return <div>

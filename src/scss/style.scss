@@ -43,6 +43,7 @@
   animation: rotateEmoji 5s infinite;
 }
 
+
 @keyframes rotateEmoji {
   from {
     transform: rotate(0deg);
@@ -54,7 +55,204 @@
 .nav-button {
   padding: 5px;
   margin-right: 10px;
-  background-color: #61dafb;
+  //background-color: #61dafb;
   border-radius: 5px;
   //height: 30px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+.box{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  // animation: slide 2s forwards;
+  // animation-fill-mode: none;
+}
+@keyframes customAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(500px, 0);
+  }
+  50% {
+    transform: translate(500px, 250px);
+  }
+  75% {
+    transform: translate(0, 250px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes customAnimationCircle {
+  0% {
+    transform: translateX(200px) translateY(0);
+  }
+  100% {
+    transform: translateX(0) translateY(200px);
+  }
+}
+@keyframes circularAnimationCircle2 {
+  0% {
+    transform: translate(200px, 0);
+  }
+  25% {
+    transform: translate(100px, 173px);
+  }
+  50% {
+    transform: translate(-100px, 173px);
+  }
+  75% {
+    transform: translate(-200px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 0.8;
+}
+
+.red-ring {
+  border-top-color: red;
+  border-bottom-color: red;
+  animation-name: redRingAnimation;
+}
+
+.green-ring {
+  border-left-color: green;
+  border-right-color: green;
+  animation-name: greenRingAnimation;
+}
+
+.main {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  top: 50px;
+  left: 50px;
+}
+
+@keyframes redRingAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes greenRingAnimation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.box:hover{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  animation: customAnimationCircle2 10s infinite linear; //cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+// .nav-button:hover{
+//   background-color: #7e7e7e;
+//   // transform: to-upper-case($string: "dgfgd");
+//   //transform: matrix(1.1, 0, 0, 1.1, 1, 1);
+//   //animation: rotateEmoji 5s infinite;
+//   animation-name: rotateEmoji;
+//   animation-duration: 2s;
+//   animation-timing-function: cubic-bezier();
+//   animation-delay: 0s;
+//   animation-iteration-count: 5;
+//   //animation-direction: alternate;
+//   animation-fill-mode: both;
+//   animation-play-state: running;
+
+//   //translate: 20px;
+// }
+
+.detailContainer {
+  box-shadow:1px 1px 3px 0px black ;
+  border-radius: 10px;
+  background-color: white; 
+  overflow: hidden;
+}
+
+.emojiDetailContainer{
+  box-shadow:1px 1px 3px 0px black ;
+  border-radius: 10px;
+  background-color: white; 
+  overflow: hidden;
+}
+
+#howToUseButton{
+  display: none;
+}
+
+.detailContainerMain{
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  display: flex ;
+  padding:10px
+}
+.detailContainer{
+
+}
+
+.online-dot {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .emojiDetailContainer{
+    width: 100%;
+  }
+  #howToUseButton{
+    display: block;
+    width: 100%;
+  }
+  .detailContainerMain{
+    display: flex ;
+    flex-direction: column;
+  }
+  .detailContainer{
+    margin-top: 10px;
+  }
 }
