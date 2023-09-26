@@ -9,7 +9,8 @@ const buttonConfig = [
     { value: 'flowersEmojis', label: 'Flower' },
     { value: 'handSignEmojis', label: 'Hand Sign' },
     { value: 'fruitsEmojis', label: 'Fruit' },
-    { value: 'foodEmojis', label: 'Food' }
+    { value: 'foodEmojis', label: 'Food' },
+    { value: 'vehicleEmojis', label: 'Vehicle' }
 ]
 
 const HomePage = () => {

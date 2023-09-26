@@ -41,6 +41,7 @@
 
 .headingEmoji {
   animation: rotateEmoji 5s infinite;
+  text-shadow: none;
 }
 
 
@@ -239,6 +240,22 @@
   border-radius: 50%;
   display: inline-block;
 }
+
+.copy-button {
+  background-color:'white';
+  //border:'1px solid gray';
+  //font-size: x-small;
+  font-size: 0.75rem;
+  margin-left: 10px;
+}
+.copy-button:active {
+  background-color:'white';
+  border:'none';
+  color: blue;
+  box-shadow: 1px 1px 1px 1px gray;
+  font-size: 0.75rem;
+}
+
 
 @media screen and (max-width: 600px) {
   .emojiDetailContainer{
